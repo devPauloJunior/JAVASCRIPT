@@ -5,7 +5,9 @@ Estrutura do objeto: chave: valor,
 
 */
 
-let meuObjeto = {
+let meuObjeto = {}
+
+meuObjeto = {
     Nome: 'Paulo',
     Sobrenome: 'Junior',
     Idade: 29,
