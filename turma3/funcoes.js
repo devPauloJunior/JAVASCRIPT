@@ -1,22 +1,18 @@
-// function somar(a, b) {
-//     console.log(a + b) 
-// }
+function somar(a, b) {
+    console.log(a + b) 
+}
 
-// somar(2, 4)
-// somar(3, 9)
-// somar(5, 6)
-// somar(6, 3)
-// somar('7', '5')
-// somar('Paulo', ' Junior')
+module.exports = somar
 
+function deMaior(idade) {
+    if (idade >= 18) {
+        console.log('Você é maior de idade.')
+    } else {
+        console.log('Você é menor de idade.')
+    }
+}
 
-// function deMaior(idade) {
-//     if (idade >= 18) {
-//         console.log('Você é maior de idade.')
-//     } else {
-//         console.log('Você é menor de idade.')
-//     }
-// }
+module.exports = deMaior
 
 // const prompt = require('prompt-sync')()
 // let idade = Number(prompt('Informe sua idade: '))
@@ -35,27 +31,32 @@
 // deMaior(idade)
 
 // criar uma função de forma literal
-// function func01() { return 'Função 1' }
+// function func01() {
+//     this.numero = 0
+// }
+
+// func01()
+// console.log(numero)
 
 // // armazenar uma função em uma variavel
 // const func02 = function() { return 'Função 2'}
+// console.log(func02())
 
 // // armazenar uma função em um array
-// const meuArray = [ function(a, b) { return a + b}, func01, func02 ]
+// const meuArray = [ function(a=null, b=null) { return a + b},]
 
 // console.log(meuArray[0](4, 7))
-// console.log(meuArray[1]())
-// console.log(meuArray[2]())
+// console.log(meuArray[0]())
 
 // // armazenar uma função em atributo de objeto
-// const obj = {}
-// obj.falar = function() { return 'Opa, to aqui' }
+// const objeto = {}
+// objeto.falar = function() { return 'Opa, to aqui' }
 
-// console.log(obj.falar())
+// console.log(objeto.falar())
 
 // //função como parametro de uma função
-// function qualquerCoisa(eita) {
-//     eita()
+// function qualquerCoisa(funcao) {
+//     funcao()
 // }
 
 // qualquerCoisa(function() { console.log('Executando....') })
@@ -113,25 +114,26 @@
 
 // console.log(soma())
 // console.log(soma(1))
-// console.log(soma(1, 5))
+// console.log(soma(1, ' Ola'))
 // console.log(soma(1, 5, 9, 6, 3, 2, 1, 4))
 // console.log(soma('Paulo ', 'Junior'))
 
 // funções com parametros e com valores padrões
 // antes do es2015
-function multiplicacao(a, b, c) {
-    a = a || 1 
-    b = b || 1
-    c = c || 1
-    return a * b * c
-}
-console.log(multiplicacao())
+// function multiplicacao(a, b, c) {
+//     a = a || 1 
+//     b = b || 1
+//     c = c || 1
+//     return a * b * c
+// }
+// console.log(multiplicacao())
 
-// valor padrão do es2015
-function multiplicacao2015(a=1, b=1, c=1) {
-    return a * b * c
-}
-console.log(multiplicacao2015())
-console.log(multiplicacao2015(2))
-console.log(multiplicacao2015(4, 6))
-console.log(multiplicacao2015(8, 10, 12))
+// // valor padrão do es2015
+// function multiplicacao2015(a=1, b=1, c=1) {
+//     return a * b * c
+// }
+// console.log(multiplicacao2015())
+// console.log(multiplicacao2015(2))
+// console.log(multiplicacao2015(4, 6))
+// console.log(multiplicacao2015(8, 10, 12))
+
