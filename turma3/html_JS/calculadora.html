@@ -17,36 +17,54 @@
                 <div class="calculadora">
                     <input type="text" class="form-control resultado" placeholder="0" disabled="disabled">
                     <div class="row">
-                        <button type="button" class="btn btn-dark btn-lg clear fw-light">C</button>
-                        <button type="button" class="btn btn-dark btn-lg fw-light">/</button>
-                        <button type="button" class="btn btn-dark btn-lg fw-light">x</button>
+                        <button type="button" class="btn btn-dark btn-lg clear fw-light"
+                            onclick="calcular('acao', 'c')">C</button>
+                        <button type="button" class="btn btn-dark btn-lg fw-light"
+                            onclick="calcular('acao', '/')">/</button>
+                        <button type="button" class="btn btn-dark btn-lg fw-light"
+                            onclick="calcular('acao', 'x')">x</button>
                     </div>
                     <div class="row">
-                        <button type="button" class="btn btn-dark btn-lg fw-light">7</button>
-                        <button type="button" class="btn btn-dark btn-lg fw-light">8</button>
-                        <button type="button" class="btn btn-dark btn-lg fw-light">9</button>
-                        <button type="button" class="btn btn-dark btn-lg fw-light">-</button>
+                        <button type="button" class="btn btn-dark btn-lg fw-light"
+                            onclick="calcular('num', '7')">7</button>
+                        <button type="button" class="btn btn-dark btn-lg fw-light"
+                            onclick="calcular('num', '8')">8</button>
+                        <button type="button" class="btn btn-dark btn-lg fw-light"
+                            onclick="calcular('num', '9')">9</button>
+                        <button type="button" class="btn btn-dark btn-lg fw-light"
+                            onclick="calcular('acao', '-')">-</button>
                     </div>
                     <div class="row">
-                        <button type="button" class="btn btn-dark btn-lg fw-light">4</button>
-                        <button type="button" class="btn btn-dark btn-lg fw-light">5</button>
-                        <button type="button" class="btn btn-dark btn-lg fw-light">6</button>
-                        <button type="button" class="btn btn-dark btn-lg fw-light">+</button>
+                        <button type="button" class="btn btn-dark btn-lg fw-light"
+                            onclick="calcular('num', '4')">4</button>
+                        <button type="button" class="btn btn-dark btn-lg fw-light"
+                            onclick="calcular('num', '5')">5</button>
+                        <button type="button" class="btn btn-dark btn-lg fw-light"
+                            onclick="calcular('num', '6')">6</button>
+                        <button type="button" class="btn btn-dark btn-lg fw-light"
+                            onclick="calcular('acao', '+')">+</button>
                     </div>
                     <div class="row">
-                        <button type="button" class="btn btn-dark btn-lg fw-light">1</button>
-                        <button type="button" class="btn btn-dark btn-lg fw-light">2</button>
-                        <button type="button" class="btn btn-dark btn-lg fw-light">3</button>
-                        <button type="button" class="btn btn-dark btn-lg enter">=</button>
+                        <button type="button" class="btn btn-dark btn-lg fw-light"
+                            onclick="calcular('num', '1')">1</button>
+                        <button type="button" class="btn btn-dark btn-lg fw-light"
+                            onclick="calcular('num', '2')">2</button>
+                        <button type="button" class="btn btn-dark btn-lg fw-light"
+                            onclick="calcular('num', '3')">3</button>
+                        <button type="button" class="btn btn-dark btn-lg enter"
+                            onclick="calcular('acao', '=')">=</button>
                     </div>
                     <div class="row subir">
-                        <button type="button" class="btn btn-dark btn-lg fw-light zero">0</button>
-                        <button type="button" class="btn btn-dark btn-lg fw-light">.</button>
+                        <button type="button" class="btn btn-dark btn-lg fw-light zero"
+                            onclick="calcular('num', '0')">0</button>
+                        <button type="button" class="btn btn-dark btn-lg fw-light"
+                            onclick="calcular('acao', '.')">.</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="./assets/js/calculadora.js"></script>
 </body>
 
 </html>
