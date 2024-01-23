@@ -15,14 +15,15 @@
         <div class="row">
             <div class="col d-flex justify-content-center">
                 <div class="calculadora">
-                    <input type="text" class="form-control resultado" placeholder="0" disabled="disabled">
+                    <input id="resultado" type="text" class="form-control resultado" placeholder="0"
+                        disabled="disabled">
                     <div class="row">
                         <button type="button" class="btn btn-dark btn-lg clear fw-light"
                             onclick="calcular('acao', 'c')">C</button>
                         <button type="button" class="btn btn-dark btn-lg fw-light"
                             onclick="calcular('acao', '/')">/</button>
                         <button type="button" class="btn btn-dark btn-lg fw-light"
-                            onclick="calcular('acao', 'x')">x</button>
+                            onclick="calcular('acao', '*')">x</button>
                     </div>
                     <div class="row">
                         <button type="button" class="btn btn-dark btn-lg fw-light"
