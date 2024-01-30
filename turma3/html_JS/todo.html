@@ -1,3 +1,37 @@
-<p>
-Criar um ambiente WEB capaz de cadastrar, deletar e visualizar tarefas diarias do usuario. Campos que demve ser utilizados. Titulo, descrição, data, horario campo de conclusão.
-</p>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do - Lista de atividades</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/todo.css">
+</head>
+
+<body class="paleta01">
+    <div class="container">
+        <div class="row">
+            <h1 class="display-4">To Do - Lista de Atividades</h1>
+            <div class="d-flex align-items-center">
+                <div class="me-2">Dark Mode: </div>
+                <button type="button" class="btn btn-warning" onclick="darkMode()">Clique</button>
+            </div>
+            <p class="error"></p>
+            <div class="inputDiv">
+                <input type="text" class="form-control mb-3" id="titulo" placeholder="Informe o Titulo da Atividade">
+                <input type="text" class="form-control mb-3" id="Descrição" placeholder="Faça uma breve descrição">
+                <input type="datetime-local" class="form-control mb-3" id="dataHora">
+                <button type="button" class="btn btn-secondary">Adicionar</button>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/todo.js"></script>
+</body>
+
+</html>
